@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <link rel="stylesheet" href="tasks_road.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <nav class="navbar">
+        <a href="./home.htm" class="logo">Skill Zone <span>| BETA</span></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="./home.htm">Home</a></li>
+            <li class="nav-item"><a href="./tasks_road.htm">Tracks / Roadmaps</a></li>
+            <li class="nav-item"><a href="./intern.htm">Internships</a></li>
+            <li class="nav-item"><a href="./loading.html">Sign In / Up</a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h3>ـــــــــــــــــــ Popular Courses🔥ـــــــــــــــــــ </h3>
+            <div class="courses">   
+                
+                <div class="course">
+                     
+                    <img src="./imgs/cpp_logo.png" alt="" style="overflow: hidden;">
+                    <h4> C++ Course </h4>
+                    <p>Instructor:
+                        <a href="./instructorprof.html">Amr Mamdouh</a>
+                    </p>
+                    <p>Rating: ⭐⭐⭐⭐</p>
+                    <button>Enroll Now</button>
+                </div>
+                <div class="course"> 
+                    <img src="./imgs/Python-logo.png" alt="" style="overflow: hidden;">
+                    <h4> Python Course for beginners </h4>
+                    <p>Instructor:
+                        <a href="./instructorprof.html">Amr Mamdouh</a>
+                    </p>
+                    <p>Rating: ⭐⭐⭐⭐⭐</p>
+                    <a href="./aya/enroll.htm"><button>Enroll Now</button></a>
+                </div>
+                <div class="course"> 
+                    <img src="./imgs/java.png" alt="" style="overflow: hidden;">
+                    <h4> Java Course </h4>
+                   
+                    <p>Instructor:
+                        <a href="./instructorprof.html">Amr Mamdouh</a>
+                    </p>
+                    <p>Rating: ⭐⭐⭐⭐⭐</p>
+                    <a href="./aya/enroll.htm"><button>Enroll Now</button></a>
+                </div>
+                <div class="course"> 
+                    <img src="./imgs/php.png" alt="" style="overflow: hidden;">
+                    <h4> PHP Course </h4>
+                    <p>Instructor:
+                        <a href="./instructorprof.html">Amr Mamdouh</a>
+                    </p>
+                    <p>Rating: ⭐⭐⭐⭐</p>
+                    <a href="./aya/enroll.htm"><button>Enroll Now</button></a>
+                    
+                </div>
+                
+              
+            </div>
+         
+
+        </section>
+        <section>
+            <h3>ـــــــــــــــــــ Tracks & roadmaps🔥ـــــــــــــــــــ </h3>
+            <div class="container">
+                <a href="./trackproblem.htm" class="course-button">
+                    <i class="fa fa-code"></i>
+                    <h2>Problem Solving</h2>
+                </a>
+                <a href="./trackweb.htm" class="course-button">
+                    <i class="fa fa-laptop"></i>
+                    <h2>Web Development</h2>
+                </a>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section-about">
+                    <a href="./home.htm" style="text-decoration: none;color: aliceblue;"><h1 style="font-family: 'Agentur';">Skill Zone<span>| BETA</h1></a>
+                    <p>Skill Roads is a platform that provides you with the best courses and tracks to learn programming languages and computer science.</p>
+                    <p>&copy; <span id="currentYear"></span> Skill Roads</p>
+                    <div class="contact">
+                        <i class="fa fa-envelope"></i>
+                        contactUs@skillzone.com
+                    </div>
+                    <span id="currentTime" style="
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        color: aliceblue;
+                        margin-top: 1rem;
+                        display: block;
+                    " ></span>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // JavaScript code to update the current year
+            document.getElementById("currentYear").innerText = new Date().getFullYear();
+    
+            // JavaScript code to update the current time
+            function updateTime() {
+                var currentTimeElement = document.getElementById("currentTime");
+                var currentTime = new Date();
+                var hours = currentTime.getHours();
+                var minutes = currentTime.getMinutes();
+                var seconds = currentTime.getSeconds();
+                
+                // Add leading zeros if needed
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+                currentTimeElement.innerText = "Current Time: " + hours + ":" + minutes + ":" + seconds;
+            }
+    
+            // Update time every second
+            setInterval(updateTime, 1000);
+        </script>
+    </footer>
+    
+</body>
+</html>
